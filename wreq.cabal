@@ -1,5 +1,5 @@
 name:                wreq
-version:             0.4.1.0
+version:             0.4.1.1
 synopsis:            An easy-to-use HTTP client library.
 description:
   .
@@ -108,7 +108,7 @@ library
     exceptions >= 0.5,
     ghc-prim,
     hashable,
-    http-client >= 0.4.6,
+    http-client >= 0.4.6 && < 5,
     http-client-tls >= 0.2,
     http-types >= 0.8,
     lens >= 4.5,
@@ -185,7 +185,7 @@ test-suite tests
     case-insensitive,
     containers,
     hashable,
-    http-client,
+    http-client >= 0.4.6 && < 5,
     http-types,
     lens,
     lens-aeson,
